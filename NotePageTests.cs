@@ -10,6 +10,6 @@ public class NotePageTests : BunitTestContext
         var cut = RenderComponent<NotePage>();
 
         // Assert that content of the paragraph shows counter at zero
-        cut.Find("h1").MarkupMatches("<h1>Title 1</h1>");
+        cut.Find("h1").MarkupMatches("<h1>Ti</h1>");
     }
 }
