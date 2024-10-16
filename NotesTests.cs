@@ -22,7 +22,7 @@ public class NotesTests : BunitTestContext
 
         // Assert
         cut.Find("#button-Personal").MarkupMatches("<button id='button-Personal'>Personal</button>");
-        //cut.Find("button").MarkupMatches("<button>Personal</button>");
-        //cut.Find("button").MarkupMatches("<button>Random</button>");
+        cut.Find("#button-Learning").MarkupMatches("<button id='button-Learning'>Learning</button>");
+        cut.Find("#button-Random").MarkupMatches("<button id='button-Random'>Random</button>");
     }
 }
