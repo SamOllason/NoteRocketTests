@@ -20,8 +20,9 @@ public class NotesTests : BunitTestContext
         var cut = RenderComponent<Notes>();
 
         // Assert
-        cut.Find("#button-Personal").MarkupMatches("<button id='button-Personal'>Personal</button>");
-        cut.Find("#button-Learning").MarkupMatches("<button id='button-Learning'>Learning</button>");
-        cut.Find("#button-Random").MarkupMatches("<button id='button-Random'>Random</button>");
+        cut.Find("#button-Personal").MarkupMatches("<button type='button' class='btn btn-primary' id='button-Personal'>Personal</button>");
+        cut.Find("#button-Learning").MarkupMatches("<button type='button' class='btn btn-primary' id='button-Learning'>Learning</button>");
+        cut.Find("#button-Scouts").MarkupMatches("<button type='button' class='btn btn-primary' id='button-Scouts'>Scouts</button>");
+
     }
 }
