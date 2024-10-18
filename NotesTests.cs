@@ -1,5 +1,4 @@
-﻿using NoteRocket.Client.Components;
-using NoteRocket.Client.Pages;
+﻿using NoteRocket.Client.Pages;
 
 namespace NoteRocketTests;
 public class NotesTests : BunitTestContext
@@ -10,7 +9,7 @@ public class NotesTests : BunitTestContext
         // Arrange
         var cut = RenderComponent<Notes>();
 
-        // Assert that content of the paragraph shows counter at zero
+        // Assert
         cut.Find("h1").MarkupMatches("<h1>Notes</h1>");
     }
 

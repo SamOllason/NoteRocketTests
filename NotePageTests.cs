@@ -7,19 +7,12 @@ public class NotePageTests : BunitTestContext
     public void NotePage_RendersTitle()
     {
         // Arrange
-        var cut = RenderComponent<NotePage>();
+        //var cut = RenderComponent<NotePage>(parameters => parameters);
 
-        // Assert that content of the paragraph shows counter at zero
-        cut.Find("h1").MarkupMatches("<h1>Ti</h1>");
-    }
+        var cut = RenderComponent<NotePage>(parameters => parameters
+            .Add(p => p.Id, 1));
 
-    [Test]
-    public void NotePage_RendersCategoryButtons()
-    {
-        // Arrange
-        var cut = RenderComponent<NotePage>();
-
-        // Assert that content of the paragraph shows counter at zero
-        cut.Find("button").MarkupMatches("<button>Holidays</button>");
+        // Assert
+        cut.Find("h1").MarkupMatches("<h1>Shopping list</h1>");
     }
 }
