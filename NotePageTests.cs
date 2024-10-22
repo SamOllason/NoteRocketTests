@@ -1,5 +1,5 @@
 ﻿using NoteRocket.Client.Components;
-using NoteRocket.Client.Models;
+using NoteRocket.Client.Services;
 
 namespace NoteRocketTests;
 public class NotePageTests : BunitTestContext
