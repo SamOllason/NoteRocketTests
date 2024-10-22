@@ -1,7 +1,7 @@
 ﻿using NoteRocket.Client.Pages;
 
 namespace NoteRocketTests;
-public class NotesTests : BunitTestContext
+public class NotesHomeTests : BunitTestContext
 {
     [Test]
     public void NotePage_RendersTitle()
