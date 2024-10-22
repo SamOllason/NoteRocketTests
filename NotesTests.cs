@@ -7,7 +7,7 @@ public class NotesTests : BunitTestContext
     public void NotePage_RendersTitle()
     {
         // Arrange
-        var cut = RenderComponent<Notes>();
+        var cut = RenderComponent<NotesHome>();
 
         // Assert
         cut.Find("h1").MarkupMatches("<h1>Notes</h1>");
@@ -17,7 +17,7 @@ public class NotesTests : BunitTestContext
     public void NotePage_RendersCategoryButtons()
     {
         // Arrange
-        var cut = RenderComponent<Notes>();
+        var cut = RenderComponent<NotesHome>();
 
         // Assert
         cut.Find("#button-Personal").MarkupMatches("<button type='button' class='btn btn-primary' id='button-Personal'>Personal</button>");
