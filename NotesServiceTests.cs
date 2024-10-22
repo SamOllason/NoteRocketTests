@@ -1,7 +1,7 @@
 ﻿namespace NoteRocketTests;
 
 [TestFixture]
-public class NoteRepositoryTests
+public class NoteServiceTests
 {
 
     //[Test]
